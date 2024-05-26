@@ -1,0 +1,4 @@
+*** Company Accounts  By Aheadworks for WooCommerce Changelog ***
+
+2020-04-27 - Version 1.0.0
+* Inital release

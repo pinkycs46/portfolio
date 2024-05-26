@@ -1,0 +1,11 @@
+*** Popup pro By Aheadworks for WooCommerce Changelog ***
+2020-09-22 - Version 1.0.1
+* Fix - Crashes cart when customer goes to remove item due to 3xx redirection issue.
+* Fix - Scrolling is present while preview of Linked products popups.
+* Fix - Page content should not scroll if Popup is appeared at the page.
+* Fix - Not all products are displayed in popups with Related Products.
+* Fix - Remove a frame appeared once Admin selects popup type.
+* Update - WP 5.5.1 compatibility.
+
+2020-03-06 - Version 1.0.0
+* Inital release

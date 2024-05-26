@@ -1,0 +1,30 @@
+.aw_cc_credit_information {
+    margin: 0 0 20px;
+}
+.aw_cc_credit_information .cc-col-three {
+    display: inline-block;
+    width: 32%;
+    padding: 0 10px 15px 0;
+	vertical-align: top;
+}
+a.woocommerce-button.woocommerce-button--next.woocommerce-Button.woocommerce-Button--next.button {
+    margin-top: 5px;
+}
+a.woocommerce-button.woocommerce-button--previous.woocommerce-Button.woocommerce-Button--previous.button{
+	margin-top: 5px;	
+}
+.shop_table_responsive_grid { overflow: hidden; overflow-x: auto;}
+.woocommerce-orders-table__header-order-customercomment {word-wrap: normal;}
+
+.woocommerce-account .woocommerce-MyAccount-content .aw_cc_credit_information label {
+    display: block;
+}
+.negative_val{
+	color:red;
+}
+.positive_val{
+	color:green;
+}
+@media screen and (max-width: 767px) { 
+	.shop_table_responsive_grid table.shop_table_responsive.my_account_orders thead {display: none;}
+}

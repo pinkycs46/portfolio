@@ -1,0 +1,12 @@
+*** Company Credit By Aheadworks for WooCommerce Changelog ***
+2023-02-06 - Version 1.0.2
+* Fix - Customers are charged twice.
+	  -- when order status comes onhold to completed charged twice -fixed
+	  -- when order status comes pending payment to completed charged twice - fixed
+* Update - WP 6.1.1  compatibility.
+
+2022-05-11 - Version 1.0.1
+* Fix - Customers are charged twice when order comes onhold to completed.
+
+2021-06-24 - Version 1.0.0
+* Inital release

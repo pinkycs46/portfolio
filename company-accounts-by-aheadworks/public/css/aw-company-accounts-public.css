@@ -1,0 +1,68 @@
+ul, #myUL {
+  /*list-style-type: none;*/
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25BC";/*"\25B6"*/;
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(30deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: block;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.activelist { display: none;} 
+
+
+/* Register Form ----------------------- */
+form#aw_ca_company_form h3 { border-bottom: 1px solid #ccc; padding-bottom: 10px; margin: 0 0 20px; line-height: 1.2;}
+form#aw_ca_company_form table tr { background-color: transparent;}
+form#aw_ca_company_form table td { padding: 0 0 1em 0; background-color: transparent;}
+form#aw_ca_company_form table td label { display: inline-block;}
+form#aw_ca_company_form table td input[type="text"] { width: 100%; /*background: #fff; border: 1px solid #ccc; box-shadow: none;*/ margin-top: 5px; clear: both; display: block;}
+
+.aw-ca-btn-action { text-align: right; padding: 0 0 15px;}
+.aw-ca-table-responsive-grid { overflow: hidden; overflow-x: auto; overflow-y: auto; max-height: 650px; margin-bottom: 20px;}
+
+/* Edit New User Form ----------------------- */
+form.edit-account fieldset { margin: 0px; padding: 0; background-color: transparent; border: none;}
+form.edit-account fieldset legend { margin: 0 0 20px; padding: 0; font-size: 24px; background-color: transparent;}
+form.edit-account fieldset input[type="text"],
+form.edit-account fieldset select { width: 100%; /*background: #fff; border: 1px solid #ccc; box-shadow: none;*/ margin-top: 5px; clear: both; display: block;}
+form.edit-account fieldset select { padding: 10px; text-indent: -0.08em;}
+
+/* Permission Tree ------------------------ */
+.aw-ca-role-permission-new fieldset { margin: 0px; padding: 0; background-color: transparent;}
+.aw-ca-role-permission-new fieldset legend { margin: 0 0 20px; padding: 0; font-size: 24px; background-color: transparent;}
+.permission_checklist > li { margin: 0 0 0 10px; list-style: none;}
+.permission_checklist li span.caret { display: inline-block; width: 20px; margin-left: -8px;}
+.permission_checklist ul { margin-top: 10px;}
+.permission_checklist ul li { min-height: 24px; border-left: 1px dotted #888; margin-left: 24px; position: relative; list-style: none;}
+.permission_checklist ul li ul li { min-height: 24px; border-left: 1px dotted #888; margin: 0 0 0 24px; padding: 5px 0 0 24px;}
+.permission_checklist ul li ul li:before { content: ''; width: 18px; height: 1px; background-color: #aaa; display: block; position: absolute; left: 0px; top: 14px;}
+
+.permission_checklist ul li .caret-down::before { margin-left: -2px;}
+
+/* Required Field Highlight ----------------------- */
+.req_field { color: #f00;}
