@@ -1,0 +1,121 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+span.aw_price_close_hover{ cursor: pointer;}
+label.aw_wgc_hint{ color: #f00;}
+
+.close { cursor: pointer; position: absolute; top: 50%; right: 0; padding: 12px 16px; transform: translate(0%, -50%);}
+.close:hover { background: #bbb;}
+
+
+/*
+.aw_gc_code_information { float: left; width: 45%; padding: 0 15px 0 15px; margin: 0 10px 0 0; background-color: #fff; border: 1px solid #EAEAEA;}
+.aw_gc_order_information { float: left; width: 45%; padding: 0 15px 0 15px;	margin: 0 0 10px 0;	background-color: #fff;	border: 1px solid #EAEAEA;}
+.aw_gc_code_available_amount { float: left; width: 33%;}
+.aw_gc_code_expiration_date { float: left; width: 33%;}
+.aw_gc_code_created_date { float: left; width: 33%;}
+.aw_gc_order_history { float: left; width: 94%; padding: 0 15px 0 15px; margin: 0 10px 0 0;	background-color: #fff;	border: 1px solid #EAEAEA;}
+.aw_gc_code_50per {	float: left; width: 50%;}
+*/
+.aw_gc_code_expiration_date a {text-decoration: none; color: #444}
+.woocommerce_options_panel .options_group.show_if_aw_gift label { font-size: 14px; font-weight: 500;}
+.woocommerce_options_panel .options_group ._price_field .aw_wgc_prices { font-size: 16px; font-weight: 500; word-wrap: break-word;}
+.woocommerce_options_panel .options_group ._price_field .aw_wgc_prices:hover { background-color: #EEEEEE;}
+.woocommerce_options_panel .options_group ._price_field .aw_price_close_hover { margin: 0 10px 0 5px; font-size: 20px; font-weight: 700;}
+.woocommerce_options_panel .options_group ._price_field .aw_price_close_hover:hover { color: #F00;}
+
+.aw_gc_code_number { border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 10px 0; margin: 0 0 15px;}
+.aw_gc_code_number h4 { font-size: 24px; font-weight: 400; color: #0073aa; margin: 20px 0; line-height: 1; display: inline-block;}
+.aw_gc_code_number h4 a {text-decoration:none;}
+.aw_gc_code_status { float: right; margin: 20px 0 0; background-color: #4DB962; color: #fff; padding: 6px 15px; border-radius: 2px;}
+
+.aw_gc_order_information .aw_gc_code_number { padding: 18px 0 10px;}
+.aw_gc_order_information .aw_gc_code_number h4 { margin: 5px 0 10px;}
+
+.aw_gc_code_information .col-row,
+.aw_gc_order_information .col-row { padding: 10px 0;}
+
+.aw_gc_code_information .col-row label, 
+.aw_gc_order_information .col-row label { font-size: 14px; color: #777;}
+
+.aw_gc_code_information .col-row strong,
+.aw_gc_order_information .col-row strong { font-size: 20px; padding-top: 8px; display: inline-block;}
+.aw_gc_detail_information {border-top: 1px solid #ddd; padding: 18px 0px 10px; margin: 0 0 15px;}
+.aw_gc_detail_information .aw_info-name { display: inline-block; font-size: 16px; font-weight: 500;}
+.aw_gc_detail_information .aw_info_email { float: right; color: #0073aa; font-size: 16px; font-weight: 500;}
+
+.aw_gc_order_history { width: 100%;}
+
+.aw_seprator_row { text-align: left; clear: both; display: block; border-top: 1px solid #ddd; padding: 15px 0 15px 15px;}
+
+#aw_wgc_config_form table.form-table { max-width: 700px;}
+#aw_wgc_config_form table.form-table select { width: 100%;}
+
+.col-row { clear: both; width: 100%; display: block;}
+.col-row:after { content: ''; clear: both; display: table;}
+.col-row .col-one { float: left; width: 100%; padding-right: 20px; box-sizing: border-box;}
+.col-row .col-two { float: left; width: 50%; padding-right: 20px; box-sizing: border-box;}
+.col-row .col-three { float: left; width: 33.33%; padding-right: 20px; box-sizing: border-box;}
+
+.col-row .card {
+    position: relative;
+    min-width: 0;
+	max-width: 100%;
+    word-wrap: break-word;
+    background-color: transparent;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,0.125);
+    border-radius: .25rem;
+	-webkit-box-shadow: 0px 2px 4px rgba(31,30,47,0.1);
+    box-shadow: 0px 2px 4px rgba(31,30,47,0.1);
+	padding: 0;
+    margin: 0 0 24px;
+}
+.col-row .card .card-body { background-color: #fff; padding: 20px;}
+.col-row .card .card-body h3 { margin: 0 0 15px;}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.col-row .col-one { padding-right: 15px;}
+	.col-row .col-two {	padding-right: 15px;}
+	.col-row .col-three { padding-right: 10px;}
+	.aw_gc_code_information .col-row strong, 
+	.aw_gc_order_information .col-row strong { font-size: 16px;}
+}
+
+@media screen and (min-width: 768px) {
+	#aw_wgc_config_form table.form-table th { padding-left: 10px;}
+	table.form-table+p.submit { padding-left: 10px;}
+}
+
+@media screen and (max-width: 1023px) {
+	.auto-fold #wpcontent { padding: 0 15px;}
+	#wpcontent .wrap { margin-right: 0;}
+}
+
+@media screen and (max-width: 782px) {
+	.wp-list-table tr:not(.inline-edit-row):not(.no-items) td.column-primary~td:not(.check-column) {
+		padding: 3px 8px 3px 35%;
+	}
+	table.aw_gc_order_history tbody td.column-primary {
+		padding-left: 10px;
+	}
+}
+
+@media screen and (max-width: 767px) {	
+	.col-row .col-one { padding-right: 0;}
+	.col-row .col-two {	width: 100%; padding-right: 0;}
+	.col-row .col-three { padding-right: 10px;}
+	.aw_gc_code_number h4 { font-size: 20px; margin: 24px 0 20px;}
+	.aw_gc_code_information .col-row strong, 
+	.aw_gc_order_information .col-row strong { font-size: 15px;}
+	
+	table.aw_gc_order_history thead { display: none;}
+	table.aw_gc_order_history tbody td { display: block; padding-left: 40%;}
+}

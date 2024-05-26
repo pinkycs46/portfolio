@@ -1,0 +1,3 @@
+*** Gift Card By Aheadworks for WooCommerce Changelog ***
+2021-01-08 - Version 1.0.0
+* Inital release

@@ -1,0 +1,282 @@
+#alltabcontent table td select { width: 100%; max-width: 180px; margin: 2px;}
+
+table.aw-batc-tbl thead th,
+table.aw-batc-tbl tbody td { padding: 10px;}
+
+
+/* Front pages --------------------------- */
+table.variations td label.aw-steps {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    display: block;
+}
+table.variations td label.aw-steps::before {
+    content: '1';
+    background-color: #3C9CD2;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+	font-weight: 400;
+    font-size: 16px;
+    margin-right: 8px;
+    border-radius: 50px;
+    line-height: 1.3;
+}
+table.variations td label.aw-steps.one::before {
+    content: '1';
+}
+table.variations td label.aw-steps.two::before {
+    content: '2';
+}
+textarea#aw_wgc_additional_text {
+    resize: none;
+    overflow: hidden;
+    max-height: 160px;
+    overflow-y: auto;
+}
+
+.single-product div.product table.variations td input[type="text"], 
+.single-product div.product table.variations td input[type="email"] {
+    width: 100%;
+    max-width: 100%;
+    background-color: #f2f2f2;
+    border: 1px solid #eee;
+    box-shadow: none;
+    min-height: 45px;
+}
+.single-product div.product table.variations td select {
+    width: 99.8%;
+    max-width: 100%;
+	background: url('../images/select-bg.svg') no-repeat 100% 45% #f2f2f2;
+    border: 1px solid #eee;
+    box-shadow: none;
+    height: 45px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    padding: 0 22px 0 8px;
+	box-sizing: border-box;
+}
+
+table.shop_table.cart { margin-bottom: 0;}
+table.aw-tbl-coupon.shop_table tr:last-child td { /*padding-left: 0px;*/}
+
+table.cart.aw-tbl-coupon td.actions .coupon .input-checkbox {
+	margin-left: 10px;
+}
+table.cart.aw-tbl-coupon td.actions .coupon label {
+	/*display: inline-block !important;*/
+}
+table.cart.aw-tbl-coupon td.actions:last-child .coupon {
+	float: none;
+}
+table.aw-tbl-coupon.shop_table td.actions-btn {
+	padding-right: 0;
+	text-align: right;
+}
+table.cart.aw-tbl-coupon td.actions .coupon {
+	width: 100%;
+	text-align: left;
+}
+table.cart.aw-tbl-coupon td.actions .coupon button.button {
+	float: right;
+}
+.woocommerce-page #content table.aw-tbl-coupon.cart td.actions .input-text {
+    width: 175px;
+}
+
+table.aw-tbl-coupon.shop_table .coupon .coupon-col {
+    display: inline-block;
+    vertical-align: top;
+}
+table.aw-tbl-coupon.shop_table td.actions .coupon .coupon-col label {
+    display: block !important;
+    line-height: normal;
+}
+table.aw-tbl-coupon.shop_table .coupon .coupon-col.action-btn {
+    float: right;
+}
+table.aw-tbl-coupon.shop_table .coupon .coupon-col .inp-checkbox, 
+table.aw-tbl-coupon.shop_table .coupon .coupon-col .inp-label {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Gift Balance Popup */
+.aw-gift-balance { position: relative;}
+.aw-gift-balance .field { text-align: right;}
+
+.aw_gc_users_gift_card_modal {
+    display: none;
+    position: absolute;
+    right: 105px;
+    top: -25px;
+    width: 290px;
+    height: auto;
+    z-index: 999;
+}
+
+.aw_gc_users_gift_card-content {
+    background-color: #FFF;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    width: 100%;
+    box-shadow: 0 0 8px #ccc;
+    -moz-box-shadow: 0 0 8px #ccc;
+    -webkit-box-shadow: 0 0 8px #ccc;
+}
+
+.aw_gc_users_gift_card_modal_close { /*color: #aaaaaa; float: right; font-size: 28px; font-weight: bold;*/}
+.aw_gc_users_gift_card_modal_close:hover,
+.aw_gc_users_gift_card_modal_close:focus { color: #000; text-decoration: none; cursor: pointer;}
+
+.aw-gift-balance .aw_gc_mod-header h2 { font-size: 20px; margin: 0 0 10px; text-align: left;}
+h1:not(.site-title):before, h2:before { display: none;}
+
+
+#updatepoint_input{ width: 100%;}
+#updatepoint_txt{ width: 100%;}
+.aw_gc_users_gift_card_modal_action_btns{ display: flex; text-align: left;}
+.aw_gc_users_gift_card_modal_action_btns .button { width: 50%; margin: 0;}
+.aw_gc_users_gift_card_modal_action_btns input#new_gift_card_add { margin-right: 10px;}
+
+.aw_gc_users_gift_card-content .rd-header { padding: 15px 20px; border-bottom: 1px solid #ddd;}
+.aw_gc_users_gift_card-content .rd-header h2 { margin: 0;}
+
+.aw_gc_users_gift_card-content .aw_gc_users_gift_cards { padding: 0px;}
+.aw_gc_users_gift_card-content .aw_gc_users_gift_cards ul { margin: 0; padding: 0; list-style: none;}
+.aw_gc_users_gift_card-content .aw_gc_users_gift_cards li { margin-bottom: 15px;}
+.aw_gc_users_gift_card-content .aw_gc_users_gift_cards li label { margin-bottom: 8px; display: inline-block;}
+.aw_gc_users_gift_card-content .aw_gc_users_gift_cards li .control .input-text { background-color: #fff; border: 1px solid #e5e5e5; width: 100%;box-shadow: none;}
+.aw_gc_users_gift_card_inactive-btn { background-color: transparent; box-shadow: none; border: none; color:#555;}
+
+.woocommerce-remove-giftcode {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  /*color: #069;*/
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.single-product div.product table.variations td {
+   display: block;
+   border: none;
+	background-color: transparent;
+}
+ 
+#customise_checkout_field table td { border:none; }
+#customise_checkout_field table  { border:none; }
+
+.woocommerce-account table.account-orders-table {
+	overflow: visible;
+}
+
+.aw_hint{
+	font-size: 13px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	table.aw-tbl-coupon.shop_table tr:last-child td { padding-left: 1em;}
+}
+
+@media only screen and (max-width: 782px){	
+	.wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.check-column) { position: relative; left: 0; clear: both; width: auto!important; text-align: left; padding: 8px 50px 8px 35%;}
+	.wp-list-table tr:not(.inline-edit-row):not(.no-items) td.column-primary~td:not(.check-column) { padding: 3px 8px 3px 35%; text-align: left;}
+	.wp-list-table .toggle-row {
+		position: absolute;
+		right: 8px;
+		top: 10px;
+		display: none;
+		padding: 0;
+		width: 40px;
+		height: 40px;
+		border: none;
+		outline: 0;
+		background: 0 0;
+	}
+	.wp-list-table .toggle-row:before {
+		position: absolute;
+		top: -5px;
+		left: 10px;
+		border-radius: 50%;
+		display: block;
+		padding: 1px 2px 1px 0;
+		color: #444;
+		content: "\f140" !important;
+		font: normal 20px/1 dashicons;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		speak: none;
+	}
+	.wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.check-column)::before,
+	.wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.column-primary)::before {
+		position: absolute;
+		left: 10px;
+		display: block;
+		overflow: hidden;
+		width: 32%;
+		content: attr(data-colname);
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.striped>tbody>:nth-child(odd){ background-color: #f9f9f9;}
+	table:not( .has-background ) tbody td { background-color: #f2f2f2;}
+}
+
+@media only screen and (max-width: 767px){	
+	table.aw-batc-tbl tbody tr {display: block; border-bottom: 1px solid #ddd; padding: 10px 0;}	
+	table.aw-batc-tbl thead tr th {display: none;}
+	table.aw-batc-tbl tbody tr td { padding: 8px 5px 8px 40%; display: block; position: relative; width: 100%; text-align: left;}
+	table.aw-batc-tbl tbody tr td.aw-batc-prod-checkbox { padding: 8px;}
+	table.aw-batc-tbl tbody tr td::before {
+		position: absolute;
+		left: 10px;
+		display: block;
+		overflow: hidden;
+		width: 32%;
+		font-weight: 600;
+    	color: #222;
+		content: attr(data-colname);
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}	
+	table.aw-tbl-coupon.shop_table tr:last-child td { padding-bottom: 10px;}
+	
+	table.shop_table_responsive.my_account_orders thead { /*display: table-header-group;*/ display: table; width: 100%;}
+	table.shop_table_responsive.my_account_orders thead tr.aw_gc-mob-hide { display: none;}
+	table.shop_table_responsive.my_account_orders thead tr { display: table-row; }
+	table.shop_table_responsive.my_account_orders thead th.woocommerce-orders-table__header { display: table-cell;}
+
+	.aw_gc_users_gift_card_modal { right: 0px; top: 45px;}
+
+	table.cart.aw-tbl-coupon td.actions:last-child .coupon{ float: left;}
+	table.cart.aw-tbl-coupon td.actions .coupon .input-checkbox {
+	margin-left: 10px;
+	width: auto!important;
+	display: inline-block;
+	}
+	table.aw-tbl-coupon.shop_table .coupon .coupon-col.action-btn {
+		width: 100%;
+		padding: 15px 0 0;
+	}
+	table.aw-tbl-coupon.shop_table .coupon .coupon-col .input-text {
+		float: none;
+		width: 100% !important;
+		margin: 0;
+	}
+	table.cart.aw-tbl-coupon td.actions:last-child:after {
+		content: '';
+		display: block !important;
+		clear: both;
+	}
+}
