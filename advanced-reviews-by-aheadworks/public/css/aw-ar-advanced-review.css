@@ -1,0 +1,420 @@
+button#aw_ar_write_review {
+    /*float: right;*/
+}
+
+/* Three column layout */
+.aw-ar-side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.aw-ar-middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.aw-ar-right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.aw-ar-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.aw-ar-bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.aw-ar-bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.aw-ar-bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.aw-ar-bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.aw-ar-bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.aw-ar-bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+
+
+
+/* The Modal (background) */
+.aw_ar_abuse_modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 180px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  z-index: 999
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: #FFF;
+	margin: auto;
+	padding: 0;
+	border: none;
+	width: 95%;
+	max-width: 600px;
+	box-shadow: 0 0 8px #666; -moz-box-shadow: 0 0 8px #666; -webkit-box-shadow: 0 0 8px #666;
+}
+ 
+/* The Close Button */
+.modal-content .close {
+	text-align: center;
+	padding: 5px 20px;
+	line-height: 1.4;
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.modal-content .close:hover,
+.modal-content .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content #aw_ar_button_section {
+    padding: 30px;
+}
+.modal-content #aw_ar_button_section h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+	margin: 10px 0;
+}
+
+.aw_ar_modal_action_btns{text-align: right;}
+
+
+.aw_ar_msg_modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 180px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  z-index: 999
+
+
+}
+.modal-content #aw_ar_msg_section {
+    padding: 30px;
+}
+ 
+
+form.aw_ar_comment-form label {
+    display: block;
+}
+.aw_ar_pro-cons {
+    padding: 0 0 20px;
+}
+
+ul.aw_ar_ulsort{
+  list-style-type: none;
+  padding: 0px; /* Remove padding */
+  margin: 0px; /* Remove margins */
+}
+ul.aw_ar_ulsort li{
+  display: inline-block;
+  padding: 3px; /* Remove padding */
+  margin: 2px; /* Remove margins */
+}
+ul.aw_ar_ulsort li span:hover{
+  cursor: pointer;
+}
+ul.aw_ar_ulsort li.active span{
+  color:blue;
+}
+
+ul.aw_ar_ulsort li.aw_ar_desc._ascend:after {
+    content: '';
+    width: 7px;
+    height: 11px;
+    display: inline-block;
+    margin-left: 4px;
+    background: url(../images/aw-ar-sort-desc.png) no-repeat 0 0;
+}
+ul.aw_ar_ulsort li.aw_ar_asc._descend:after {
+	content: '';
+    width: 7px;
+    height: 11px;
+    display: inline-block;
+    margin-left: 4px;
+    background: url(../images/aw-ar-sort-desc.png) no-repeat 0 0;
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.aw_ar_actions {
+    padding: 15px 0 5px;
+    text-align: right;
+}
+
+#reviews ul.aw_ar_gallery-front,
+ul.aw_ar_gallery-front {
+    margin: 0 0 20px;
+}
+#reviews ul.aw_ar_gallery-front li,
+ul.aw_ar_gallery-front li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px 15px 0;
+    border: 1px solid #eee;
+    padding: 4px;
+	max-width: 120px;
+}
+#reviews ul.aw_ar_gallery-front li:last-child,
+ul.aw_ar_gallery-front li:last-child {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.aw_ar_avg_count-panel .aw_ar_avg_count {
+    display: inline-block;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 400;
+    vertical-align: middle;
+}
+.aw_ar_avg_count-panel .woocommerce-product-rating {
+    display: inline-block !important;
+}
+.aw_ar_avg_count-panel .star-rating-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.review_container {
+    margin: 0 0 40px;
+}
+.review_container ul.aw_ar_gallery-front {
+    margin-top: 20px;
+}
+
+.review_container .review-avatar {
+    display: inline-block;
+}
+.review_container .review-author {
+    display: inline-block;
+    vertical-align: top;
+    margin: -5px 0 10px 15px;
+}
+.review_container .review-text {
+    margin-bottom: 15px;
+}
+
+.aw_ar_review-helpful {
+    margin: 15px 0;
+}
+.aw_ar_review-helpful p {
+    margin: 0 20px 0 0;
+    display: inline-block;
+}
+.aw_ar_review-helpful .thumbs-rate {
+    display: inline-block;
+	vertical-align: bottom;
+}
+
+.aw_ar_comments-block {
+    border-left: 1px solid #e5e5e5;
+    padding: 0 15px;
+    position: relative;
+    margin: 0 0 20px;
+}
+.aw_ar_comments-block .aw_ar_comments_author {
+    font-weight: 600;
+}
+.aw_ar_comments-block .aw_ar_comments_content {
+    padding: 0 0 15px;
+}
+.aw_ar_comments-block img.aw_ar_abuse_img {
+    max-height: 14px;
+}
+
+.aw_ar_notifications p.form-row-wide label {
+    display: inline-block;
+}
+
+#unfeaturedreview ul {
+    list-style: none;
+    margin: 0 0 20px;
+}
+
+.mrg-top {
+    margin-top: 30px;
+}
+img.aw_ar_like_dislike_img:hover {
+  cursor: pointer;
+}
+img.aw_ar_abuse_img:hover {
+  cursor: pointer;
+}
+
+.form-submit.aw_ar_gif_loader{
+    position: relative;
+} 
+.thumbs-rate.aw_ar_gif_loader {
+    position: relative;
+}
+.aw_ar_gif_loader:after{
+  content: '';
+  z-index: 1000;
+  background: url('../images/loading.gif') no-repeat 0 0;
+  background-size: 100%;
+  pointer-events : none;
+  height: 24px;
+  width: 24px;
+  display:inline-block;
+  position:absolute;
+  top: 4px;
+}
+button.aw_ar_addcomment_btn{
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  font-family: arial, sans-serif;
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer!important;;
+}
+span.aw_ar_termcondition{
+  color:blue;
+  cursor: pointer!important;
+}
+
+.gallery {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery li {
+    float: left;
+    margin: 4px;
+}
+
+.aw_ar_filters_wrap .aw_ar_form-field-wrap {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+}
+.aw_ar_filters_wrap .aw_ar_form-field-wrap:last-child {
+    margin-right: 0;
+}
+
+.aw_ar_review-sortby {
+    padding: 0 0 25px;
+}
+.aw_ar_review-sortby label {
+    display: inline-block;
+    font-weight: 600;
+	margin: 0 20px 20px 0;
+}
+.aw_ar_review-sortby ul.aw_ar_ulsort {
+    display: inline-block;
+}
+
+.thumbs-rate .thumbs-images {
+    display: inline-block;
+    margin-right: 15px;
+}
+.thumbs-rate .thumbs-images img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    margin-top: -2px;
+}
+.thumbs-rate > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+.thumbs-rate > div img {
+    max-height: 14px;
+}
+
+.woocommerce-awar-success {
+    margin-bottom: 2.617924em;
+    background-color: #0f834d;
+    margin-left: 0;
+    border-radius: 2px;
+    color: #fff;
+    clear: both;
+    border-left: 0.6180469716em solid rgba(0, 0, 0, 0.15);
+    padding: 1em 2em 1em 3.5em;
+    position: relative;
+    list-style: none outside;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+	left: 0;
+    min-width: 100%;
+    min-height: 20%;
+    font-size: 10px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+	height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.aw-upload-file {
+    max-width: 58rem;
+    margin: 0 auto;
+}
+ul.page-numbers li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.comment-form-reviewimage .btn-file {
+    border: 1px solid #bbb;
+    padding: 8px 15px;
+    display: inline-block;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 600;
+	vertical-align: middle;
+}
+
+.comment-respond form.comment-form p.comment-form-author, 
+.comment-respond form.comment-form p.comment-form-email {
+    display: block;
+	width: auto;
+}
+.comment-respond .comment-form-rating {
+    display: block;
+    clear: both;
+}
