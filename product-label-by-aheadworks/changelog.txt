@@ -1,0 +1,3 @@
+*** Product Labels By Aheadworks for WooCommerce Changelog ***
+2021-06-24 - Version 1.0.0
+* Inital release

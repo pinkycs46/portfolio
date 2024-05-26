@@ -1,0 +1,505 @@
+
+html { box-sizing: border-box;}
+*, *:before, *:after { box-sizing: inherit;}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+
+/*-------------popup css-------------*/
+
+/* Modal Content */
+.prod_modal-content {
+  background-color: #FFF;
+  margin: auto;
+  padding: 15px 25px;
+  border: none;
+  width: 75%;
+  max-height: 500px;
+  box-shadow: 0 0 8px #666; 
+  -moz-box-shadow: 0 0 8px #666; 
+  -webkit-box-shadow: 0 0 8px #666;
+  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.prod_modal_close:hover,
+.prod_modal_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.prod_modal-content .wrap {
+    margin: 0;
+}
+.prod_modal-content .aw-header {
+    position: relative; padding: 10px 0 0; margin-bottom: 15px; border-bottom: 1px solid #ddd;
+}
+.prod_modal-content .aw-header h2 {
+    margin: 0 0 15px;
+}
+.prod_modal-content .aw-header a.batc-popup-close {
+    position: absolute;
+    right: 0px;
+    top: 4px;
+    width: auto;
+    height: auto;
+}
+.prod_modal-content .aw-header a.batc-popup-close::before {
+  content: "\f335";
+    font-size: 30px;
+    color: #444;
+    font-weight: normal;
+}
+.prod_modal-content .tablenav.bottom {
+    /*display: inline-block;
+    height: auto;*/
+}
+.prod_modal-content .actions-bottom {
+    text-align: right;
+    clear: both;
+  float: right;
+    margin: 10px 0
+}
+.prod_modal-content table thead td input, 
+.prod_modal-content table tfoot td input {
+    margin: 0; width: auto !important;
+}
+
+@media screen and (max-width: 782px) {
+    /* POPUP PRODUCT LIST */
+  #add_new_prod_modal p.search-box {
+    position: static;
+    height: auto;
+  }
+
+  #add_new_prod_modal .tablenav.top .actions {
+    display: block;
+    padding: 0 0 20px;
+  }
+  #add_new_prod_modal .tablenav.top .actions select {
+    width: 100%;
+    margin: 0 0 8px;
+    max-width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 782px) {
+  #add_new_prod_modal .tablenav.top .actions select {
+    margin: 0 8px 8px 0;
+      max-width: 145px
+  }
+}
+
+@media screen and (min-width: 768px) {  
+  #add_new_prod_modal.prod_modal {
+    padding: 80px 0 0 160px;
+    box-sizing: border-box;
+  }
+  #add_new_prod_modal.prod_modal .prod_modal-content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .prod_modal-content .wrap {
+    margin: 0;
+  }
+  #add_new_prod_modal.prod_modal {
+    padding: 80px 0 0 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .prod_modal-content {
+    padding: 15px;
+    width: 85%;
+  }
+  .auto-fold #wpcontent {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+}
+
+.prod_modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    z-index: 999;
+}
+
+.prod_modal-content .aw-header a.batc-popup-close {
+    position: absolute;
+    right: 0px;
+    top: 4px;
+    width: auto;
+    height: auto;
+}
+
+.prod_modal-content .aw-header {
+    position: relative;
+    padding: 10px 0 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tablenav .actions select {
+    float: left;
+    margin-right: 6px;
+    max-width: 12.5rem;
+}
+
+.batc-loader{
+    z-index: 1000;
+    background-image: url('../images/loader1_.gif');
+    background-position: 50% 0%;
+    //background-color:rgb(0,0,0,0.5);
+    background-repeat: no-repeat;
+    pointer-events : none;
+    height: 300px;
+  width: 100%;
+    position: absolute;
+    top: 135px;
+    left: 0;
+}
+
+/*FAQ SETTINGS -----------------------*/
+#wpcontent {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.inline {
+ /* display: inline;*/
+}
+.plus {
+    border-radius: 50%;
+    background-color: #00bc5d;
+    color: #fff;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+	display: inline-block;
+	cursor: pointer;
+}
+#dynamic_plus{
+    border-radius: 50%;
+    background-color:   #1aff8c;
+    color:   #004d26;
+    border: none;
+    padding: 4px 8px 8px 8px;
+}
+#close {
+    margin-left: 0px;
+    margin-top: 14px;
+    border-radius: 50%;
+    background-color:    #ff6666;
+    color:   #004d26;
+    border: none;
+    padding: 4px 8px 8px 8px;
+	cursor: pointer;
+}
+#cat_div #sku_div {
+    margin-left: 0px;
+    margin-top: 14px;
+    border-radius: 14%;
+    background-color: blue;
+    /*background-image: url( 'http://thinkingstiff.com/images/matt.jpg' );*/
+    color:   #004d26;
+    border: none;
+    padding: 4px 8px 8px 8px;
+}
+
+#apply {
+    margin-left: 0px;
+    margin-top: 14px;
+    border-radius: 14%;
+    /*background-color: green;*/
+    border: none;
+    padding: 4px 8px 8px 8px;
+}
+#myDIV {
+  width: 20%;
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+.tab-grid-wrapper .tab { 
+    overflow: hidden; 
+    z-index: 1; 
+    position: relative; 
+    padding-left: 15px;
+}
+.tab-grid-wrapper .tab button {
+    background-color: #e5e5e5;
+    float: left;
+    width: auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 15px;
+    font-size: 14px; color: #555;
+    height: 45px;
+    margin-right: 10px;
+    border: 1px solid #d5d5d5;
+}
+.tab-grid-wrapper .tab button:hover {
+    background-color: #ddd;
+}
+.tab-grid-wrapper .tab button.active { 
+    background-color: #f1f1f1; 
+    color: #222; 
+    border-bottom: 1px solid #d5d5d5;
+}
+.tab-grid-wrapper .tabcontent { 
+    display: none; 
+    padding: 25px 0px 15px; 
+    border-top: 1px solid #d5d5d5; 
+    position: relative; 
+    top: -1px; 
+} 
+.rule-setting h1 {
+    line-height: normal;
+}
+.rule-setting ul {
+  margin: 0;
+}
+.rule-setting ul li {
+    margin: 0 0 10px;
+}
+.rule-setting ul li p {
+    margin: 5px 0 15px;
+  color: #777;
+}
+.rule-setting label {
+  font-weight: 500;
+}
+.rule-setting .actions{
+  padding:25px 0 10px;
+}
+.rule-setting .actions .button-primary {
+    padding: 5px 25px;
+    min-width: 140px;
+    font-weight: 500;
+}
+
+.rule-setting li label { display: inline-block; width: 100%; max-width: 210px; vertical-align: top;}
+.rule-setting .tabcontent li .control { display: inline-block; width: 100%; max-width: 300px;}
+.rule-setting .tabcontent li .control textarea, 
+.rule-setting .tabcontent li .control input:not([type='checkbox']) { width: 100%;}
+.rule-setting .tabcontent li .control select { width: 100%; max-width: 200px;}
+
+.rule-articles-set li label {
+    display: inline-block;
+    width: 100%;
+    max-width: 210px;
+    vertical-align: top;
+}
+.rule-articles-set li .control {
+    display: inline-block;
+}
+.rule-seo-set li label {
+    display: inline-block;
+    width: 100%;
+    max-width: 210px;
+    vertical-align: top;
+}
+.rule-seo-set li .control {
+    display: inline-block;
+}
+
+.product-label-setting ul li label { width: 100%; max-width: 210px; display: inline-block; padding-bottom: 5px;}
+.product-label-setting ul li .control { display: inline-block; vertical-align: top; width: 100%; max-width: 300px;}
+.product-label-setting ul li .control input[type="text"], 
+.product-label-setting ul li .control select { width: 100%;}
+
+.product-label-genral-setting ul li label { width: 100%; max-width: 210px; display: inline-block; padding-bottom: 5px;}
+.product-label-genral-setting ul li .control { display: inline-block; vertical-align: top; width: 100%; max-width: 300px;}
+.product-label-genral-setting ul li .control select { max-width: 165px;}
+
+/* PRODUCT LABELS TABLE */
+.widefat td.label_image { position: relative;}
+.widefat td.label_image p { margin: 0; font-weight: 600; line-height: 1;}
+.widefat td.label_image p.overlay-label { background: rgba(0,0,0,0.2); padding: 4px; color: #fff; position: absolute; left: auto; /*top: 20px;left: 0px;width: 100%;*/ text-align: center;font-weight: 600; word-break: break-word;}
+
+.widefat td.label_image .td-img-label { position: relative; /*display: inline-block;*/ display: flex; align-items: center; justify-content: center; width: 60px; height: 60px;}
+
+.product-image-area .img-label-wrap,
+.product-image-area-next-price .img-label-wrap { /*position: relative;*/ padding: 5px; text-align: center; display: flex; align-items: center; justify-content: center; width: 100px; height: 100px;}
+.product-image-area .img-label-wrap span,
+.product-image-area-next-price .img-label-wrap span { background: rgba(0,0,0,0.2); padding: 4px; color: #fff; position: absolute; /*top: 15px; left: 15px;*/ font-weight: 600; margin: 0;}
+.product-image-area .img-label-wrap img, 
+.product-image-area-next-price .img-label-wrap img { max-width: 100%;}
+
+button.dropbtn, button.dropbtn-text {
+    border: 1px solid #ccc;
+    background-color: #e5e5e5;
+    min-width: 140px;
+    text-align: left;
+    padding-right: 18px;
+    position: relative;
+    padding: 10px;
+}
+button.dropbtn i, button.dropbtn-text i {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+
+/* Admin Rule Tree */
+.rule-tree-wrapper ol li { list-style: none;}
+.rule-tree-wrapper ol li p { display: inline-block; font-size: 14px; margin: 0;}
+.rule-tree-wrapper button.close-tb { font-size: 12px; margin: 0 10px; cursor: pointer; width: 24px; height: 24px; border: none; background-color: #e45a2b; color: #fff;
+border-radius: 50px; -moz-border-radius: 50px; -webkit-border-radius: 50px; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; }
+
+.rule-tree-wrapper button.apply-tb { font-size: 12px; margin: 0 10px; cursor: pointer; width: 24px; height: 24px; border: none; background-color: #007cba; color: #fff;
+border-radius: 50px; -moz-border-radius: 50px; -webkit-border-radius: 50px; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; }
+
+.rule-tree-wrapper ul li:not(:first-child) { border-top: 1px solid #ddd; padding: 8px 0 0;}
+.rule-tree-wrapper ol li select { margin: 0px;}
+.tab-grid-wrapper .rule-tree-wrapper ol li ul { margin: 15px 0 0; padding-left: 16px; border-left: dotted 1px #888;}
+.tab-grid-wrapper .rule-tree-wrapper ol li ul label.conditions { max-width: none; display: inline-block; width: auto;}
+.tab-grid-wrapper .rule-tree-wrapper ol li ul label.conditions input[type="text"] { max-width: 160px;}
+
+.tab-grid-wrapper .rule-tree-wrapper ul li .control { width: auto; max-width: none;}
+.rule-tree-wrapper ol li button { margin-left: 10px;}
+.rule-tree-wrapper ol button.plus, 
+.rule-tree-wrapper ul button.plus { margin: 10px 0 0;}
+
+.tab-grid-wrapper .tabcontent .rule-seo label { display: block; font-size: 15px; font-weight: 600; padding: 0 0 10px;}
+.tab-grid-wrapper .tabcontent .rule-seo input[type="text"] { width: 100%;}
+
+.tooltip:hover .tooltiptext { max-width: 400px; top: auto;}
+
+
+@media only screen and (max-width: 782px){
+   p.search-box { height: 115px;}
+}
+
+@media only screen and (max-width: 767px){
+   .tab-grid-wrapper .tab { padding-left: 5px;}
+   .tab-grid-wrapper .tab button {  padding: 8px 5px; height: 60px;  margin-right: 1%; width: 32%; line-height: 1.1;}
+      
+   .rule-setting ul li.inline-menu-link .control { padding-top: 10px;}
+   .rule-setting ul li.inline-menu-link .control label { max-width: none; width: auto;}
+   
+   .product-label-genral-setting ul li .control input[type="text"], 
+   .product-label-genral-setting ul li .control select { max-width: 100%; width: 100%;}
+   
+   .widefat td.label_image p { left: 35%;}
+   .widefat td.label_image .rectangle { position: static;}
+   
+   .tab-grid-wrapper .tabcontent td { display: block;}
+}
+
+@media only screen and (max-width: 579px){
+   .rule-setting li label { max-width: 100%; padding-bottom: 6px;}
+}
+
+@media only screen and (max-width: 374px){
+   .tab-grid-wrapper .tab { padding-left: 0;}
+   .tab-grid-wrapper .tab button {  padding: 8px 5px; height: auto;  margin-right: 0; width:100%; line-height: normal;}
+}
+
+.rule-param select {
+    width: auto !important;
+    margin: 0;
+    min-width: 170px;
+}
+
+.tab-grid-wrapper .tab button {
+    background-color: #e5e5e5;
+    float: left;
+    width: auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 15px;
+    font-size: 14px; color: #555;
+    height: 45px;
+    margin-right: 10px;
+    border: 1px solid #d5d5d5;
+}
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+.checkboxes label {
+  display: block;
+}
+
+/*.conditions {
+    width: 142%;
+    max-width: 249px;
+    display: inline-block;
+    padding-bottom: 5px;
+}*/
+
+/*#checkboxes label:hover {
+  background-color: #1e90ff;
+}*/
+
+/*-----------------------------------------*/
+.skumultiselect {
+  width: 200px;
+}
+.skuselectBox {
+  position: relative;
+}
+
+.skuselectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.skuoverSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#skucheckboxes {
+  height:162px;
+  display: none;
+  overflow: auto;
+  border: 1px #dadada solid;
+}
+
+#skucheckboxes label {
+  display: block;
+}
