@@ -1,0 +1,107 @@
+body { font-size: 16px !important;}
+#alltabcontent table td select { width: 100%; max-width: 180px; margin: 2px;}
+
+table.aw-batc-tbl thead th,
+table.aw-batc-tbl tbody td { padding: 10px; background-color: #fff;}
+
+
+/* MY CART ------------------- */
+.aw-cart-wrapper {
+    /*border: 1px solid #f2f2f2;*/
+}
+.aw-cart-wrapper #allmaintab.tab {
+    /*background-color: #f8f8f8;
+    border-bottom: 1px solid #f2f2f2;*/
+}
+.aw-cart-wrapper #allmaintab.tab .tablinks {
+    display: inline-block;
+	border-radius: 0;
+	padding: 16px;
+	cursor: default;
+}
+.aw-cart-wrapper #allmaintab.tab .tablinks:hover {
+	text-decoration: none;
+}
+.aw-cart-wrapper .tabcontent table.aw-batc-tbl {
+    margin: 0px;
+	font-size: 14px;
+}
+.aw-cart-wrapper .tabcontent table.aw-batc-tbl * {
+	border-color: #dcdcdc;
+}
+.aw-cart-wrapper .tabcontent table.aw-batc-tbl thead th {
+    background-color: #fff;
+    /*border-bottom: 1px solid #f2f2f2;*/
+	white-space: nowrap;
+	font-weight: 600;
+}
+.aw-cart-wrapper .tabcontent table.aw-batc-tbl tbody td {
+    background-color: #fff;
+    min-height: 35px;
+}
+.aw-cart-wrapper .tabcontent table.aw-batc-tbl td input.batcquantity {
+    background-color: #f8f8f8;
+    border: 1px solid #f2f2f2;
+    box-shadow: none;
+}
+.aw-cart-wrapper input[type="number"] {
+    padding: 7px 4px;
+    text-align: center;
+}
+.aw-cart-wrapper .tabcontent table.aw-batc-tbl .aw-variation {
+    white-space: nowrap;
+}
+.aw-cart-wrapper .aw-cart-actions {
+    padding: 15px;
+    border-top: 1px solid #f2f2f2;
+}
+.aw-cart-wrapper .aw-cart-actions .aw-cart-actions-total {
+    display: inline-block;
+	padding: 10px 0 0;
+	font-size: 16px;
+}
+.aw-cart-wrapper .aw-cart-actions .aw-cart-actions-total span {
+    font-weight: 700;
+}
+.aw-cart-wrapper .aw-cart-actions .aw-cart-actions-button {
+    float: right;
+}
+.aw-cart-wrapper .aw-cart-actions .aw-cart-actions-button button {
+    padding: 16px;
+    border-radius: 0;
+}
+.aw-cart-wrapper .aw-cart-actions .aw-cart-actions-button button:hover {
+	text-decoration: none;
+}
+.aw-cart-wrapper .aw-cart-actions::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.aw-cart-wrapper .tabcontent table.aw-batc-tbl tbody td.price {
+    white-space: nowrap;
+	font-weight: 600;
+}
+
+
+@media only screen and (max-width: 767px){	
+	table.aw-batc-tbl tbody tr {display: block; border-bottom: 1px solid #f2f2f2; padding: 10px 0;}	
+	table.aw-batc-tbl thead tr th {display: none;}
+	table.aw-batc-tbl tbody tr td { padding: 8px 5px 8px 40%; display: block; position: relative; width: 100%; text-align: left;}
+	table.aw-batc-tbl tbody tr td.aw-batc-prod-checkbox { padding: 8px;}
+	table.aw-batc-tbl tbody tr td::before {
+		position: absolute;
+		left: 10px;
+		display: block;
+		overflow: hidden;
+		width: 32%;
+		font-weight: 600;
+    	color: #222;
+		content: attr(data-colname);
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
