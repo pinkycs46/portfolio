@@ -1,0 +1,324 @@
+.show_questionsform{
+  display: none;
+}
+.hide_questionsform{
+  display: none;
+}
+
+.pinned-qa-detail table td {
+    padding: 10px;
+}
+.pinned-qa-detail table td.first {
+    width: 75px;
+	padding-left: 0;
+}
+.pinned-qa-detail table td label{
+    font-size: 14px;
+}
+.pinned-qa-detail table td.pinn-top {
+	padding-left: 0;
+}
+
+/* PRODUCT QUESTION SETTING ------------- */
+#wpcontent {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.tab-grid-wrapper .tab { 
+	overflow: hidden; 
+	z-index: 1; 
+	position: relative; 
+	padding-left: 15px;
+}
+.tab-grid-wrapper .tab button {
+    background-color: #e5e5e5;
+    float: left;
+    width: auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 15px;
+    font-size: 14px; color: #555;
+    height: 45px;
+    margin-right: 10px;
+    border: 1px solid #d5d5d5;
+}
+.tab-grid-wrapper .tab button:hover {
+	background-color: #ddd;
+}
+.tab-grid-wrapper .tab button.active { 
+	background-color: #f1f1f1; 
+	color: #222; 
+	border-bottom: none;
+}
+.tab-grid-wrapper .tabcontent { 
+	display: none; 
+	padding: 25px 0px 15px; 
+	border-top: 1px solid #d5d5d5; 
+	position: relative; 
+	top: -1px; 
+} 
+ 
+.product-questions-setting h1 {
+    line-height: normal;
+}
+.product-questions-setting ul {
+	margin: 0;
+}
+.product-questions-setting ul li {
+    margin: 0 0 10px;
+}
+.product-questions-setting ul li p {
+    margin: 5px 0 15px;
+	color: #777;
+}
+.product-questions-setting label {
+	font-weight: 500;
+}
+.product-questions-setting .actions{
+	padding:25px 0 10px;
+}
+.product-questions-setting .actions .button-primary {
+    padding: 5px 25px;
+    min-width: 140px;
+    font-weight: 500;
+}
+
+.rd-helpful-error, 
+.rd-not-helpful-error, 
+.rd_setting_cookie_days_error{
+    color: #F00;
+}
+
+.pq-general-set li label {
+    display: inline-block;
+    width: 100%;
+    max-width: 210px;
+    vertical-align: top;
+}
+.pq-general-set li .control {
+    display: inline-block;
+}
+.pq-general-set li .control select, 
+.pq-general-set li .control input[type="text"] {
+    width: 180px;
+}
+
+.pq-interface-set label {
+    display: inline-block;
+    width: 100%;
+    max-width: 210px;
+    vertical-align: top;
+	padding: 8px 0 0;
+}
+.pq-interface-set .control {
+    display: inline-block;
+}
+.pq-interface-set .control input[type="text"] {
+    width: 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    height: 35px;
+    margin: 0 -1px 0 0;
+    float: left;
+}
+.pq-interface-set .control button.button.jscolor {
+    height: 35px;
+    border: 1px solid #ccc;
+    color: #222;
+    font-weight: 500;
+    border-radius: 0 5px 5px 0;
+    display: inline-block;
+    margin: 0;
+	vertical-align: top;
+}
+.pq-interface-set .control button.button.pq-reset {
+    font-size: 0;
+	height: 34px;
+	color: #666;
+    border-color: #ccc;
+}
+
+/*.pq-interface-set .control button.button.pq-reset:before {
+    font-family: fontawesome;
+    content: "\f042";
+    font-size: 16px;
+}*/
+
+.pq-interface-set .control button.button.pq-reset:before {
+    content: "\f531";
+	font-family: dashicons;
+	font-size: 16px;
+	margin-top: 0;
+	display: inline-block;
+}
+
+.product-questions-setting #email-setting-tab {
+    padding: 0 0 15px;
+}
+.product-questions-setting #email-setting-tab .widefat thead th, 
+.product-questions-setting #email-setting-tab .widefat tbody td {
+    padding: 1em;
+}
+
+.tips {
+    cursor: help;
+    text-decoration: none;
+}
+.status-disabled, .status-enabled, .status-manual {
+    font-size: 1.4em;
+    display: block;
+    text-indent: -9999px;
+    position: relative;
+    height: 1em;
+    width: 1em;
+}
+.status-enabled::before {
+    font-family: WooCommerce;
+    speak: none;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1;
+    text-indent: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+	content: "\f147";
+	font-family: dashicons;
+	border: 2px solid rgb(164, 100, 151);
+	border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+    color: rgb(164, 100, 151);
+    font-variant: normal;
+    margin: 0px;
+}
+.status-disabled::before {
+    font-family: WooCommerce;
+    speak: none;
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1;
+    text-indent: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    content: "\f158";
+	font-family: dashicons;
+    color: #888;
+	font-variant: normal;
+	margin: 0px;
+	border: 2px solid #888;
+	border-radius: 50px; 
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-left: 5px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  max-width: 100px;
+  font-size: .8em;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: .618em 1em;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -30px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 782px){
+	.tab-grid-wrapper .product-questions-setting .tab {
+		padding-left: 0px;
+	}
+	.tab-grid-wrapper .product-questions-setting .tab button {
+		padding: 8px 8px;
+		margin-right: 5px;
+	}
+	.product-questions-setting #email-setting-tab .widefat tbody tr:nth-child(even) {
+		background-color: #f5f5f5;
+	}
+	.product-questions-setting #email-setting-tab .widefat thead th {
+		display: none;
+	}
+	.product-questions-setting #email-setting-tab .widefat tbody td {
+		position: relative;
+		padding: 0.5em 1em;
+		padding-left: 30%;
+		box-sizing: border-box;
+		word-break: break-all;
+	}
+	.product-questions-setting #email-setting-tab .widefat tbody td:not(.column-primary)::before {
+		position: absolute;
+		left: 10px;
+		display: block;
+		overflow: hidden;
+		width: 32%;
+		content: attr(data-colname);
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	.pq-general-set li label {
+		max-width: 180px;
+	}
+	.pq-general-set li .control {
+		width: 51%;
+	}
+	.pq-interface-set label {
+		display: block;
+		max-width: 100%;
+		padding: 8px 0 5px;
+	}
+	.form-table td .input-text {
+		max-width: 550px;
+	}
+
+}
+
+@media only screen and (max-width: 579px){
+	.pq-general-set li label {
+		max-width: 45%;
+	}
+	.form-table td input[type=text] {
+		max-width: 300px;
+	}
+	.form-table td .input-text,
+	.form-table td select {
+		max-width: 300px;
+	}
+}

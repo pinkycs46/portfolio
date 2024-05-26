@@ -1,0 +1,90 @@
+Product questions configuration setting updated,Product questions configuration setting updated
+Invalid file type or Invalid content type,Invalid file type or Invalid content type
+Product Questions,Product Questions
+General Settings,General Settings
+Enable Q&A,Enable Q&A
+This option may be overridden for individual products,This option may be overridden for individual products
+Enable helpfulness voting,Enable helpfulness voting
+Helpfulness cookie lifetime days,Helpfulness cookie lifetime days
+Who can ask questions from product page,Who can ask questions from product page
+Anyone,Anyone
+Logged In Users,Logged In Users
+"Make changes in second column of CSV file, in text you want to replace.","Make changes in second column of CSV file, in text you want to replace."
+Language Translation you added,Language Translation you added
+Click here to download your CSV file,Click here to download your CSV file
+To apply default language,To apply default language
+delete this file,delete this file
+Click here,Click here
+Added On,Added On
+Default language applied,Default language applied
+Post can be edited by customer within x minutes,Post can be edited by customer within x minutes
+If left empty or zero - no limit,If left empty or zero - no limit
+Language Translation,Language Translation
+Click here to download CSV file,Click here to download CSV file
+Download file and then uploaded once again after corrections to rename options or make their translation via a CSV file.,Download file and then uploaded once again after corrections to rename options or make their translation via a CSV file.
+Save,Save
+Interface Settings,Interface Settings
+Invalid file type !,Invalid file type !
+Highlight admin reply,Highlight admin reply
+Highlight Q & A number,Highlight Q & A number
+If the number is greater than 0,If the number is greater than 0
+Select color,Select color
+Emails,Emails
+Status,Status
+Email,Email
+Content,Content
+Recipients,Recipients
+Manage,Manage
+Add Answer,Add Answer
+Admin Email,Admin Email
+Email templates setting updated,Email templates setting updated
+Customer Question Email,Customer Question Email
+Disabled,Disabled
+Customer Answer Email,Customer Answer Email
+Customer,Customer
+A new question is submitted on the storefront and an email notification is sent to Admin,A new question is submitted on the storefront and an email notification is sent to Admin
+Enable/Disable,Enable/Disable
+Enabled,Enabled
+Enable this email notification,Enable this email notification
+Recipient(s),Recipient(s)
+Subject,Subject
+Email heading,Email heading
+Additional content,Additional content
+When a new question is waiting for approval and an email notification is sent to the customer,When a new question is waiting for approval and an email notification is sent to the customer
+When question answered by (admin/user) + link to the question (or product page) and an email notification is sent to the customer,When question answered by (admin/user) + link to the question (or product page) and an email notification is sent to the customer
+Email type,Email type
+Save changes,Save changes
+"Save my name, email in this browser for the next time I question.","Save my name, email in this browser for the next time I question."
+Q&A Details,Q&A Details
+Helpful,Helpful
+Not helpful,Not helpful
+Pinned to Top,Pinned to Top
+Enable to display question & answer on product page.,Enable to display question & answer on product page.
+HTML,HTML
+Plain text,Plain text
+Q&A,Q&A
+Be the first to ask a question about,Be the first to ask a question about
+Ask a Question,Ask a Question
+Hide,Hide
+Name,Name
+Send Question,Send Question
+Questions about,Questions about
+Edit Question,Edit Question
+Update Question,Update Question
+Your question is waiting for the answer.,Your question is waiting for the answer.
+Send Answer,Send Answer
+Your answer is awaiting moderation.,Your answer is awaiting moderation.
+Edit Answer,Edit Answer
+Update Answer,Update Answer
+Please,Please
+log in,log in
+to post an answer,to post an answer
+to post a question,to post a question
+Enter required field,Enter required field
+Enter valid email.,Enter valid email.
+Enter valid author name.,Enter valid author name.
+Enter valid comment text.,Enter valid comment text.
+Time period in which your question can be edited is expired.,Time period in which your question can be edited is expired.
+Time period in which your answer can be edited is expired.,Time period in which your answer can be edited is expired.
+"Please, enter a valid email or email separated by comma.","Please, enter a valid email or email separated by comma."
+Email id is required,Email id is required

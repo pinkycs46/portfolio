@@ -1,0 +1,116 @@
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+ul.aw-pq {
+    margin-left: 0;
+    margin-bottom: 0;
+    clear: both;
+}
+
+ul#faq_column_one > li {
+    width: 100%; vertical-align: top;
+}
+ul#faq_column_two > li {
+    width: 50%; vertical-align: top;
+}
+ul#faq_column_three > li {
+    width: 33.33%; vertical-align: top;
+}
+
+ul#faq_column_three > li > img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px 0 0;
+	max-width: 40px;
+}
+
+.faq-table ul.aw-pq ul {
+    margin: 15px 0 0;
+	padding: 0;
+}
+.faq-table ul.aw-pq ul li {
+    margin: 0 0 5px;
+	display: block;
+    padding: 0;
+}
+.faq-table ul.aw-pq ul li img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+
+.faq-table li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  margin: 0;
+}
+.faq-table li > img {
+    margin-right: 5px;
+	max-width: 40px;
+    display: inline-block;
+	vertical-align: top;
+}
+.faq-table li h3 {
+	font-size: 20px;
+    margin: 5px 0 15px 0;
+	padding: 0;
+	display: inline-block;
+    vertical-align: top;
+}
+.faq-table li h3 a {
+    font-size: inherit;
+	text-decoration: none;
+}
+.search-article {
+    /*align-items: stretch;
+    display: flex;
+    flex-wrap: nowrap;*/
+	max-width: 800px;
+	margin: 0 auto;
+}
+.search-article label {
+    /*align-items: stretch;
+    display: flex;*/
+    font-size: inherit;
+    margin: 0;
+    width: 76%;
+    width: -webkit-calc(100% - 130px);
+    width: -moz-calc(100% - 130px);
+    width: calc(100% - 130px);	
+	display: inline-block;
+}
+.search-article .search-submit {
+    flex-shrink: 0;
+    margin: 0 0 0.8rem 0.8rem;
+}
+
+.search-article .search-field-art {
+    width: 100%;
+    height: 50px;
+}
+.search-article input[type="submit"] {
+    margin-left: 0;
+	vertical-align: top;
+    /*max-width: 24%;*/
+	position: static;
+    
+	height: 50px;
+	padding: 0 15px;
+	min-width: 120px;
+	width: 18%;
+    width: -webkit-calc(120px);
+    width: -moz-calc(120px);
+    width: calc(120px);
+}
+
+@media only screen and (max-width: 767px){
+	ul#faq_column_two > li,
+	ul#faq_column_three > li { width: 100%; padding: 20px 0;}
+}
