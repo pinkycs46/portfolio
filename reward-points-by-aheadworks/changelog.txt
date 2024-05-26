@@ -1,0 +1,8 @@
+*** Reward Points By Aheadworks for WooCommerce Changelog ***
+2020-11-04 - Version 1.1.0
+* Enhancement - Display amount of points to be earned at cart/checkout.
+* Fix - Extra points are added when order is restored.
+* Update - WP 5.5.3 compatibility.
+
+2020-05-05 - Version 1.0.0
+* Inital release

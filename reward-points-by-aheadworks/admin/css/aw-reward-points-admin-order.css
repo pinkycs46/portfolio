@@ -1,0 +1,8 @@
+.rd_admin_order_loader{
+    z-index: 1000;
+    background-image: url('../images/aw_loading.gif');
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    pointer-events : none;
+    height: 24px;
+}
